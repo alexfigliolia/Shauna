@@ -33,7 +33,7 @@ export default class Slide2 extends Component {
 				<div>
 					<h1>
 						{
-							'Hey Mom!'.split('').map((letter, i) => {
+							'Hey'.split('').map((letter, i) => {
 								if(letter === ' ') {
 									return (
 										<div key={i}><h1>&nbsp;</h1></div>
@@ -72,6 +72,45 @@ export default class Slide2 extends Component {
 										</div>
 									);
 								}
+							})
+						}
+					</h1>
+					<br />
+					<h1>
+						{
+							'Shauna!'.split('').map((letter, i) => {
+								return (
+									<div key={i}>
+										<h1
+											style={{
+												transitionDelay: `${i/10}s`
+											}}>{letter}</h1>
+										<div 
+											className='fetti'
+											style={{
+												transition: `transform 0.3s ${(i/10)}s, opacity 0.2s ${0.2 + (i/10)}s`,
+												background: '#A2A8F8'
+											}}></div>
+										<div 
+											className='fetti'
+											style={{
+												transition: `transform 0.3s ${0.05 + (i/10)}s, opacity 0.2s ${0.25 + (i/10)}s`,
+												background: '#47FEA0'
+											}}></div>
+										<div 
+											className='fetti'
+											style={{
+												transition: `transform 0.3s ${0.1 + (i/10)}s, opacity 0.2s ${0.3 + (i/10)}s`,
+												background: '#F64D64'
+											}}></div>
+										<div 
+											className='fetti'
+											style={{
+												transition: `transform 0.3s ${0.15 + (i/10)}s, opacity 0.2s ${0.35 + (i/10)}s`,
+												background: '#4C4CF8'
+											}}></div>
+									</div>
+								);
 							})
 						}
 					</h1>

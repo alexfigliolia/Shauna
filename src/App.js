@@ -52,8 +52,8 @@ export default class App extends Component {
             activeIndex={this.state.activeIndex}
             index={0} />
           <Slide1 
-            text1='Happy'
-            text2='Birthday'
+            text1='Its your'
+            text2='boyfriend'
             color={this.colors[0]}
             activeIndex={this.state.activeIndex}
             index={1}
