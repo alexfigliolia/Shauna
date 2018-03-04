@@ -1,1 +1,1 @@
-A birthday card for mom
+A card for my girlfriend
