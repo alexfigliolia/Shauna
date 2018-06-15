@@ -365,15 +365,16 @@ th {
   align-items: center;
   background: #263143;
   width: 100%;
-  font-family: 'Concert One', cursive; }
+  font-family: 'Concert One', cursive;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0; }
   .App > div {
     touch-action: pan-y;
     touch-action: pan-x;
     height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0; }
+    width: 100%; }
     .App > div div {
       display: flex;
       justify-content: center;
